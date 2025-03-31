@@ -1,62 +1,42 @@
-#include<stdio.h>
-int main() {
-	int score;											//Á¤¼öÇü º¯¼ö ¼±¾ð
-	printf("¼ºÀûÀ» ÀÔ·ÂÇÏ½Ã¿À.\n");						// ¼ºÀûÀ» ÀÔ·ÂÇÏ½Ã¿À Ãâ·Â
-	scanf("%d", &score);								//score ÀÔ·Â
-	if (score >= 70)									//if¹® Á¶°Ç ºñ±³
-		printf("ÇÕ°ÝÀÔ´Ï´Ù.\n");						// ifÀÇ °á°ú¿¡ µû¶ó Ãâ·Â
-	return 0;
-}
-
-#include<stdio.h>
-int main() {
-	int age;													//º¯¼ö age ¼±¾ð
-	printf("´ç½ÅÀÇ ³ªÀÌ´Â?(1.15¼¼ ÀÌ»ó, 2.15¼¼ ¹Ì¸¸):");		//´ç½ÅÀÇ ³ªÀÌ´Â?(1.15¼¼ ÀÌ»ó, 2.15¼¼ ¹Ì¸¸):Ãâ·Â
-	scanf("%d", &age);											//ÀÔ·Â ¸í·É
-	if (age == 1) {												//³ªÀÌ°¡ 1ÀÏ¶§
-		printf("ÀÔÀå °¡´ÉÇÕ´Ï´Ù.\n");							//ÀÔÀå °¡´ÉÇÕ´Ï´Ù Ãâ·Â
-	}
-	if (age == 2) {												//³ªÀÌ°¡ 2ÀÏ¶§
-		printf("ÀÔÀåÇÒ ¼ö ¾ø½À´Ï´Ù.\n");						//ÀÔÀåÇÒ ¼ö ¾ø½À´Ï´Ù Ãâ·Â
-	}
-	return 0;
-}
-
-#include<stdio.h>
-int main() {
-	int age;													//º¯¼ö age ¼±¾ð
-	printf("´ç½ÅÀÇ ³ªÀÌ´Â ?\n");								//´ç½ÅÀÇ ³ªÀÌ´Â ? Ãâ·Â
-	scanf("%d", &age);											//ÀÔ·Â ¹Þ±â
-	if (age >= 20)												//³ªÀÌ°¡ 20ÀÌ»óÀÏ¶§
-		printf("ÀÔÀå °¡´ÉÇÕ´Ï´Ù.\n");							//ÀÔÀå °¡´É ÇÕ´Ï´Ù Ãâ·Â
-	else                                                        //if¹®ÀÌ °ÅÁþ ÀÏ¶§
-		printf("ÀÔÀåÇÒ ¼ö ¾ø½À´Ï´Ù.\n");						//ÀÔÀåÇÒ ¼ö ¾ø½À´Ï´Ù Ãâ·Â
-	return 0;
-}
-
-#include <stdio.h>
-int main() {
-	int color;
-	printf("ÃâÀÔÁõ »ö±òÀº? (1.³ë¶õ»ö 2.ÆÄ¶õ»ö 3.»¡°£»ö)\n");   //ÃâÀÔÁõ »ö±òÀº? (1.³ë¶õ»ö 2.ÆÄ¶õ»ö 3.»¡°£»ö)Ãâ·Â
-	scanf("%d", &color);										// »ö±òÀ» ÀÔ·Â ¹Þ±â
-	if (color == 1)												// »ö±òÀÌ 1ÀÏ¶§
-		printf("³ë¶õ»ö-A¹æ \n");								// ³ë¶õ»öÀ» Ãâ·Â
-	else if (color == 2)										// »ö±òÀÌ 2ÀÏ¶§
-		printf("ÆÄ¶õ»ö-B¹æ \n");								// ÆÄ¶õ»öÀ» Ãâ·Â
-	else if (color == 3)										// »ö±òÀÌ 3ÀÏ¶§
-		printf("»¡°£»ö-C¹æ \n");								// »¡°£»ö Ãâ·Â
-	return 0;
-}
-
-#include<stdio.h>
-int main() {
-	int cap;
-	printf("´ÙÀ½ ±¹°¡ÀÇ ¼öµµ´Â?(1.¹Ì±¹ 2.ÀÏº» 3.Áß±¹)\n");		//´ÙÀ½ ±¹°¡ÀÇ ¼öµµ´Â?(1.¹Ì±¹ 2.ÀÏº» 3.Áß±¹ Ãâ·Â
-	scanf("%d", &cap);											//º¯¼ö capÀÇ ÀÔ·Â
-	switch (cap) {
-	case 1: printf("¹Ì±¹ : ¿ö½ÌÅÏ\n"); break;					//1À» ÀÔ·ÂÇÒ °æ¿ì ¹Ì±¹ ¿ö½ÌÅÏ Ãâ·Â
-	case 2: printf("ÀÏº» : µµÄì\n"); break;						//2¸¦ ÀÔ·ÂÇÒ °æ¿ì ÀÏº» µµÄì Ãâ·Â
-	case 3: printf("Áß±¹ : º£ÀÌÂ¡\n"); break;					//3À» ÀÔ·ÂÇÒ °æ¿ì Áß±¹ º£ÀÌÂ¡ Ãâ·Â
-	default: printf("ÀÔ·Â ¿À·ùÀÔ´Ï´Ù.\n");						//´Ù¸¥ ¼ö¸¦ ÀÔ·ÂÇÒ °æ¿ì ÀÔ·Â ¿À·ù
-	}
-}
+#ì˜¤ëŠ˜ì˜ ì½”ë”©
+## 1 ë‹¨ì–´ ì •ë¦¬
+```
+variable |ë³€ìˆ˜| ë°ì´í„°ë¥¼ ì €ìž¥í•˜ëŠ” ê³µê°„
+constant |ìƒìˆ˜| ë³€í•˜ì§€ ì•ŠëŠ” ê°’
+function |í•¨ìˆ˜| íŠ¹ì • ìž‘ì—…ì„ ìˆ˜í–‰í•˜ëŠ” ì½”ë“œ ë¸”ë¡
+return |ë°˜í™˜í•˜ë‹¤| í•¨ìˆ˜ê°€ ê°’ì„ ëŒë ¤ì¤„ ë•Œ ì‚¬ìš©
+parameter |ë§¤ê°œë³€ìˆ˜| í•¨ìˆ˜ê°€ ìž…ë ¥ë°›ëŠ” ê°’
+argument |ì¸ìž| í•¨ìˆ˜ì— ì „ë‹¬í•˜ëŠ” ì‹¤ì œ ê°’
+statement |ë¬¸ìž¥(êµ¬ë¬¸)| Cí”„ë¡œê·¸ëž¨ì˜ í•œ ì¤„ ì½”ë“œ
+syntax |ë¬¸ë²•| ì½”ë“œ ìž‘ì„± ê·œì¹™
+error |ì˜¤ë¥˜| ìž˜ëª»ëœ ì½”ë“œë¡œ ì¸í•œ ë¬¸ì œ
+compile |ì»´íŒŒì¼í•˜ë‹¤| Cì½”ë“œë¥¼ ì‹¤í–‰ ê°€ëŠ¥í•œ íŒŒì¼ë¡œ ë³€í™˜
+debug |ë””ë²„ê·¸í•˜ë‹¤| ì½”ë“œì˜ ì˜¤ë¥˜ë¥¼ ì°¾ê³  ìˆ˜ì •
+loop |ë°˜ë³µë¬¸| ì½”ë“œë¥¼ ì—¬ëŸ¬ ë²ˆ ì‹¤í–‰í•˜ëŠ” êµ¬ì¡°
+condition |ì¡°ê±´| if ë¬¸ì—ì„œ ì‚¬ìš©í•˜ëŠ” ì¡°ê±´
+operator |ì—°ì‚°ìž| ê³„ì‚°ì— ì‚¬ìš©ë˜ëŠ” ê¸°í˜¸
+integer |ì •ìˆ˜| ì†Œìˆ˜ì  ì—†ëŠ” ìˆ«ìž
+float |ì‹¤ìˆ˜| ì†Œìˆ˜ì  ìžˆëŠ” ìˆ«ìž
+character |ë¬¸ìž| ë‹¨ì¼ ë¬¸ìž ì €ìž¥
+string |ë¬¸ìžì—´| ì—¬ëŸ¬ ë¬¸ìžë¡œ ì´ë£¨ì–´ì§„ ë°ì´í„°
+array |ë°°ì—´| ì—¬ëŸ¬ ê°œì˜ ê°’ì„ ì €ìž¥í•˜ëŠ” ìžë£Œí˜•
+pointer |í¬ì¸í„°| ë©”ëª¨ë¦¬ ì£¼ì†Œë¥¼ ì €ìž¥í•˜ëŠ” ë³€ìˆ˜
+memory |ë©”ëª¨ë¦¬| í”„ë¡œê·¸ëž¨ì´ ë°ì´í„°ë¥¼ ì €ìž¥í•˜ëŠ” ê³µê°„
+library |ë¼ì´ë¸ŒëŸ¬ë¦¬| ë¯¸ë¦¬ ìž‘ì„±ëœ ì½”ë“œ ëª¨ìŒ
+header file |í•´ë” íŒŒì¼| Cí”„ë¡œê·¸ëž¨ì—ì„œ ì‚¬ìš©í•˜ëŠ” íŒŒì¼
+execute |ì‹¤í–‰í•˜ë‹¤| í”„ë¡œê·¸ëž¨ì„ ì‹¤í–‰í•˜ëŠ” ê³¼ì •
+print |ì¶œë ¥í•˜ë‹¤| printf()ë¡œ í™”ë©´ì— ì¶œë ¥
+scan |ìž…ë ¥ë°›ë‹¤| scanf()ë¡œ ì‚¬ìš©ìž ìž…ë ¥ ë°›ê¸°
+comment |ì£¼ì„| ì½”ë“œ ì„¤ëª…ì„ ìœ„í•œ í…ìŠ¤íŠ¸ 
+identifier |ì‹ë³„ìž| ë³€ìˆ˜, í•¨ìˆ˜, ë°°ì—´ì˜ ì´ë¦„
+data type |ë°ì´í„° íƒ€ìž…| ë³€ìˆ˜ì— ì €ìž¥ë˜ëŠ” ë°ì´í„°ì˜ ì¢…ë¥˜
+boolean |ë¶ˆë¦¬ì–¸(ì°¸/ê±°ì§“)|
+expression |í‘œí˜„ì‹| ê°’ìœ¼ë¡œ í‰ê°€ë˜ëŠ” ì½”ë“œ
+statement |ë¬¸ìž¥| if while return ê°™ì€ ì½”ë“œ
+assignment |í• ë‹¹| ë³€ìˆ˜ì— ê°’ì„ ì €ìž¥í•˜ëŠ” ê²ƒ
+modulus |ë‚˜ë¨¸ì§€ ì—°ì‚°ìž| % ê¸°í˜¸
+increment |ì¦ê°€ ì—°ì‚°ìž| ++ ì‚¬ìš© (1ì¦ê°€)
+decrement |ê°ì†Œ ì—°ì‚°ìž| -- ì‚¬ìš© (1ê°ì†Œ)
+bitwise |ë¹„íŠ¸ ì—°ì‚°ìž| & | ^ ì‚¬ìš© (ë¹„íŠ¸ ë‹¨ìœ„ ì—°ì‚°)
+logical operator |ë…¼ë¦¬ ì—°ì‚°ìž| && || !(AND, OR, NOT)
+relational operator |ë¹„êµ ì—°ì‚°ìž| == != < > ê°™ì€ ì—°ì‚°ìž
