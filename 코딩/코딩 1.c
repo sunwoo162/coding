@@ -1,61 +1,62 @@
-#include <stdio.h>
-int main() {
-	int score;											//ì •ìˆ˜í˜• ë³€ìˆ˜ ì„ ì–¸
-	printf("ì„±ì ì„ ìž…ë ¥í•˜ì‹œì˜¤.\n");						// ì„±ì ì„ ìž…ë ¥í•˜ì‹œì˜¤ ì¶œë ¥
-	scanf("%d", &score);								//score ìž…ë ¥
-	if (score >= 70)									//ifë¬¸ ì¡°ê±´ ë¹„êµ
-		printf("í•©ê²©ìž…ë‹ˆë‹¤.\n");						// ifì˜ ê²°ê³¼ì— ë”°ë¼ ì¶œë ¥
-	return 0;
-}
 #include<stdio.h>
 int main() {
-	int age;													//ë³€ìˆ˜ age ì„ ì–¸
-	printf("ë‹¹ì‹ ì˜ ë‚˜ì´ëŠ”?(1.15ì„¸ ì´ìƒ, 2.15ì„¸ ë¯¸ë§Œ):");		//ë‹¹ì‹ ì˜ ë‚˜ì´ëŠ”?(1.15ì„¸ ì´ìƒ, 2.15ì„¸ ë¯¸ë§Œ):ì¶œë ¥
-	scanf("%d", &age);											//ìž…ë ¥ ëª…ë ¹
-	if (age == 1) {												//ë‚˜ì´ê°€ 1ì¼ë•Œ
-		printf("ìž…ìž¥ ê°€ëŠ¥í•©ë‹ˆë‹¤.\n");							//ìž…ìž¥ ê°€ëŠ¥í•©ë‹ˆë‹¤ ì¶œë ¥
+	int score;											//Á¤¼öÇü º¯¼ö ¼±¾ð
+	printf("¼ºÀûÀ» ÀÔ·ÂÇÏ½Ã¿À.\n");						// ¼ºÀûÀ» ÀÔ·ÂÇÏ½Ã¿À Ãâ·Â
+	scanf("%d", &score);								//score ÀÔ·Â
+	if (score >= 70)									//if¹® Á¶°Ç ºñ±³
+		printf("ÇÕ°ÝÀÔ´Ï´Ù.\n");						// ifÀÇ °á°ú¿¡ µû¶ó Ãâ·Â
+	return 0;
+}
+
+#include<stdio.h>
+int main() {
+	int age;													//º¯¼ö age ¼±¾ð
+	printf("´ç½ÅÀÇ ³ªÀÌ´Â?(1.15¼¼ ÀÌ»ó, 2.15¼¼ ¹Ì¸¸):");		//´ç½ÅÀÇ ³ªÀÌ´Â?(1.15¼¼ ÀÌ»ó, 2.15¼¼ ¹Ì¸¸):Ãâ·Â
+	scanf("%d", &age);											//ÀÔ·Â ¸í·É
+	if (age == 1) {												//³ªÀÌ°¡ 1ÀÏ¶§
+		printf("ÀÔÀå °¡´ÉÇÕ´Ï´Ù.\n");							//ÀÔÀå °¡´ÉÇÕ´Ï´Ù Ãâ·Â
 	}
-	if (age == 2) {												//ë‚˜ì´ê°€ 2ì¼ë•Œ
-		printf("ìž…ìž¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n");						//ìž…ìž¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤ ì¶œë ¥
+	if (age == 2) {												//³ªÀÌ°¡ 2ÀÏ¶§
+		printf("ÀÔÀåÇÒ ¼ö ¾ø½À´Ï´Ù.\n");						//ÀÔÀåÇÒ ¼ö ¾ø½À´Ï´Ù Ãâ·Â
 	}
 	return 0;
 }
 
 #include<stdio.h>
 int main() {
-	int age;													//ë³€ìˆ˜ age ì„ ì–¸
-	printf("ë‹¹ì‹ ì˜ ë‚˜ì´ëŠ” ?\n");								//ë‹¹ì‹ ì˜ ë‚˜ì´ëŠ” ? ì¶œë ¥
-	scanf("%d", &age);											//ìž…ë ¥ ë°›ê¸°
-	if (age >= 20)												//ë‚˜ì´ê°€ 20ì´ìƒì¼ë•Œ
-		printf("ìž…ìž¥ ê°€ëŠ¥í•©ë‹ˆë‹¤.\n");							//ìž…ìž¥ ê°€ëŠ¥ í•©ë‹ˆë‹¤ ì¶œë ¥
-	else                                                        //ifë¬¸ì´ ê±°ì§“ ì¼ë•Œ
-		printf("ìž…ìž¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n");						//ìž…ìž¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤ ì¶œë ¥
+	int age;													//º¯¼ö age ¼±¾ð
+	printf("´ç½ÅÀÇ ³ªÀÌ´Â ?\n");								//´ç½ÅÀÇ ³ªÀÌ´Â ? Ãâ·Â
+	scanf("%d", &age);											//ÀÔ·Â ¹Þ±â
+	if (age >= 20)												//³ªÀÌ°¡ 20ÀÌ»óÀÏ¶§
+		printf("ÀÔÀå °¡´ÉÇÕ´Ï´Ù.\n");							//ÀÔÀå °¡´É ÇÕ´Ï´Ù Ãâ·Â
+	else                                                        //if¹®ÀÌ °ÅÁþ ÀÏ¶§
+		printf("ÀÔÀåÇÒ ¼ö ¾ø½À´Ï´Ù.\n");						//ÀÔÀåÇÒ ¼ö ¾ø½À´Ï´Ù Ãâ·Â
 	return 0;
 }
 
 #include <stdio.h>
 int main() {
 	int color;
-	printf("ì¶œìž…ì¦ ìƒ‰ê¹”ì€? (1.ë…¸ëž€ìƒ‰ 2.íŒŒëž€ìƒ‰ 3.ë¹¨ê°„ìƒ‰)\n");   //ì¶œìž…ì¦ ìƒ‰ê¹”ì€? (1.ë…¸ëž€ìƒ‰ 2.íŒŒëž€ìƒ‰ 3.ë¹¨ê°„ìƒ‰)ì¶œë ¥
-	scanf("%d", &color);										// ìƒ‰ê¹”ì„ ìž…ë ¥ ë°›ê¸°
-	if (color == 1)												// ìƒ‰ê¹”ì´ 1ì¼ë•Œ
-		printf("ë…¸ëž€ìƒ‰-Aë°© \n");								// ë…¸ëž€ìƒ‰ì„ ì¶œë ¥
-	else if (color == 2)										// ìƒ‰ê¹”ì´ 2ì¼ë•Œ
-		printf("íŒŒëž€ìƒ‰-Bë°© \n");								// íŒŒëž€ìƒ‰ì„ ì¶œë ¥
-	else if (color == 3)										// ìƒ‰ê¹”ì´ 3ì¼ë•Œ
-		printf("ë¹¨ê°„ìƒ‰-Cë°© \n");								// ë¹¨ê°„ìƒ‰ ì¶œë ¥
+	printf("ÃâÀÔÁõ »ö±òÀº? (1.³ë¶õ»ö 2.ÆÄ¶õ»ö 3.»¡°£»ö)\n");   //ÃâÀÔÁõ »ö±òÀº? (1.³ë¶õ»ö 2.ÆÄ¶õ»ö 3.»¡°£»ö)Ãâ·Â
+	scanf("%d", &color);										// »ö±òÀ» ÀÔ·Â ¹Þ±â
+	if (color == 1)												// »ö±òÀÌ 1ÀÏ¶§
+		printf("³ë¶õ»ö-A¹æ \n");								// ³ë¶õ»öÀ» Ãâ·Â
+	else if (color == 2)										// »ö±òÀÌ 2ÀÏ¶§
+		printf("ÆÄ¶õ»ö-B¹æ \n");								// ÆÄ¶õ»öÀ» Ãâ·Â
+	else if (color == 3)										// »ö±òÀÌ 3ÀÏ¶§
+		printf("»¡°£»ö-C¹æ \n");								// »¡°£»ö Ãâ·Â
 	return 0;
 }
 
 #include<stdio.h>
 int main() {
 	int cap;
-	printf("ë‹¤ìŒ êµ­ê°€ì˜ ìˆ˜ë„ëŠ”?(1.ë¯¸êµ­ 2.ì¼ë³¸ 3.ì¤‘êµ­)\n");		//ë‹¤ìŒ êµ­ê°€ì˜ ìˆ˜ë„ëŠ”?(1.ë¯¸êµ­ 2.ì¼ë³¸ 3.ì¤‘êµ­ ì¶œë ¥
-	scanf("%d", &cap);											//ë³€ìˆ˜ capì˜ ìž…ë ¥
+	printf("´ÙÀ½ ±¹°¡ÀÇ ¼öµµ´Â?(1.¹Ì±¹ 2.ÀÏº» 3.Áß±¹)\n");		//´ÙÀ½ ±¹°¡ÀÇ ¼öµµ´Â?(1.¹Ì±¹ 2.ÀÏº» 3.Áß±¹ Ãâ·Â
+	scanf("%d", &cap);											//º¯¼ö capÀÇ ÀÔ·Â
 	switch (cap) {
-	case 1: printf("ë¯¸êµ­ : ì›Œì‹±í„´\n"); break;					//1ì„ ìž…ë ¥í•  ê²½ìš° ë¯¸êµ­ ì›Œì‹±í„´ ì¶œë ¥
-	case 2: printf("ì¼ë³¸ : ë„ì¿„\n"); break;						//2ë¥¼ ìž…ë ¥í•  ê²½ìš° ì¼ë³¸ ë„ì¿„ ì¶œë ¥
-	case 3: printf("ì¤‘êµ­ : ë² ì´ì§•\n"); break;					//3ì„ ìž…ë ¥í•  ê²½ìš° ì¤‘êµ­ ë² ì´ì§• ì¶œë ¥
-	default: printf("ìž…ë ¥ ì˜¤ë¥˜ìž…ë‹ˆë‹¤.\n");						//ë‹¤ë¥¸ ìˆ˜ë¥¼ ìž…ë ¥í•  ê²½ìš° ìž…ë ¥ ì˜¤ë¥˜
+	case 1: printf("¹Ì±¹ : ¿ö½ÌÅÏ\n"); break;					//1À» ÀÔ·ÂÇÒ °æ¿ì ¹Ì±¹ ¿ö½ÌÅÏ Ãâ·Â
+	case 2: printf("ÀÏº» : µµÄì\n"); break;						//2¸¦ ÀÔ·ÂÇÒ °æ¿ì ÀÏº» µµÄì Ãâ·Â
+	case 3: printf("Áß±¹ : º£ÀÌÂ¡\n"); break;					//3À» ÀÔ·ÂÇÒ °æ¿ì Áß±¹ º£ÀÌÂ¡ Ãâ·Â
+	default: printf("ÀÔ·Â ¿À·ùÀÔ´Ï´Ù.\n");						//´Ù¸¥ ¼ö¸¦ ÀÔ·ÂÇÒ °æ¿ì ÀÔ·Â ¿À·ù
 	}
 }
