@@ -1,22 +1,27 @@
-/*#include <stdio.h>
+# ìˆ˜ì—…ì— í•œ ë‚´ìš©
+```
+#include <stdio.h>
 
 int main(void) {
 	int k = 70, e = 80, m = 90;
 	int a = k + e + m;
-	printf("±¹¾î %dÁ¡, ¿µ¾î%dÁ¡, ¼öÇĞ%dÁ¡\n", k, e, m);
-	printf("ÃÑÁ¡ %dÁ¡", a);
+	printf("êµ­ì–´ %dì , ì˜ì–´%dì , ìˆ˜í•™%dì \n", k, e, m);
+	printf("ì´ì  %dì ", a);
 }
-
+```
+```
 #include <stdio.h>
 
 int main(void) {
 	char ch;
-	printf("¹®ÀÚ ÀÔ·Â:");
+	printf("ë¬¸ì ì…ë ¥:");
 	scanf_s("%c", &ch);
-	printf(" %cÀÇ ¹®ÀÚÀÇ ¾Æ½ºÅ° ÄÚµå °ªÀº 116ÀÌ´Ù.",ch);
+	printf(" %cì˜ ë¬¸ìì˜ ì•„ìŠ¤í‚¤ ì½”ë“œ ê°’ì€ 116ì´ë‹¤.",ch);
 
 	return 0;
 }
+```
+```
 #include <stdio.h>
 int main(void) {
 	int a = 0, b = 0, c = 0;
@@ -26,6 +31,8 @@ int main(void) {
 	printf("b:%d,c:%d\n",b,c);
 	return 0;
 }
+```
+```
 #include<stdio.h>
 int main(void) {
 	int a = 2, b = 3, c = 6, d = 5;
@@ -37,23 +44,29 @@ int main(void) {
 	printf("c/d:%d\n", c);			//c=c/d
 	return 0;
 }
+```
+```
 #include <stdio.h>
 int main(void) {
 	int a = 2, b = 3, c = 3;
 	if (a < b)
-		printf("b°¡ aº¸´Ù Å©´Ù.\n");
+		printf("bê°€ aë³´ë‹¤ í¬ë‹¤.\n");
 	if (b == c)
-		printf("b¿Í c´Â °°´Ù.\n");
+		printf("bì™€ cëŠ” ê°™ë‹¤.\n");
 	if (a != c)
-		printf("a¿Í c´Â ´Ù¸£´Ù.\n");
+		printf("aì™€ cëŠ” ë‹¤ë¥´ë‹¤.\n");
 }
+```
+```
 #include <stdio.h>
 int main(void) {
 	int a = 2, b = 3, max;
 	if (a > b);
 	printf("max = %d\n", max);
 	return 0;
-}*/
+}
+```
+```
 #include <stdio.h>
 int main(void) {
 	int a = 5, b = 2;
@@ -68,3 +81,4 @@ int main(void) {
 	printf("y=%d", y);
 	return 0;
 }
+```
